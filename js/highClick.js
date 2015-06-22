@@ -57,7 +57,7 @@ function create()
   mylevel = game.add.text(311, 43 , '01' , {font : "15px Arial" , fill : "#eceff1"});
   timer = game.add.text(515, 43, '00:00:00' ,{font : "15px Arial" , fill : "#eceff1"});
 }
-fucntion createText()
+function createText()
 {
   boxOneText = game.add.text(0, 0,'56 + 56',{ font: "20px Arial", fill: "#ffffff", wordWrap: true, wordWrapWidth: block.getAt(0).width, align: "center" });
   boxOneText.x = Math.floor(block.getAt(0).x + block.getAt(0).width/2);
