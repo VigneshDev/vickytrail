@@ -8,7 +8,7 @@ WebFontConfig = {
     active: function() { game.time.events.add(Phaser.Timer.SECOND, createText, this); },
 
     //  The Google Fonts we want to load (specify as many as you like in the array)
-    google: { families: [ 'Crafty+Girls::latin' ] }
+    google: { families: [ 'Architects+Daughter::latin' ] }
 
 };
 function preload()
@@ -63,14 +63,14 @@ function createText()
   boxOneText.x = Math.floor(block.getAt(0).x + block.getAt(0).width/2);
   boxOneText.y = Math.floor(block.getAt(0).y + block.getAt(0).height/2);
   boxOneText.anchor.set(0.45,0.3);
-  boxOneText.font = 'Crafty Girls';
+  boxOneText.font = 'Architects Daughter';
   //boxOneText.align = center;
 
   boxTwoText = game.add.text(400, 225,'56 + 56',{ font: "20px Arial", fill: "#ffffff", wordWrap: true, wordWrapWidth: block.getAt(0).width, align: "center" });
   boxTwoText.x = Math.floor(block.getAt(1).x + block.getAt(1).width/2);
   boxTwoText.y = Math.floor(block.getAt(1).y + block.getAt(1).height/2);
   boxTwoText.anchor.set(0.45,0.3);
-  boxTwoText.font = 'Crafty Girls';
+  boxTwoText.font = 'Architects Daughter';
   boxText();
 }
 function update()
