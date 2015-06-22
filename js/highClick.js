@@ -53,12 +53,15 @@ function create()
   game.add.sprite(255,335,'equals');
   pause = game.add.sprite(575,460,'pause');
   pause.inputEnabled = true;
-  myscore = game.add.text(80, 43 , '000' , {font : "15px Architects Daughter" , fill : "#eceff1"});
-  mylevel = game.add.text(311, 43 , '01' , {font : "15px Architects Daughter" , fill : "#eceff1"});
-  timer = game.add.text(515, 43, '00:00:00' ,{font : "15px Architects Daughter" , fill : "#eceff1"});
+  myscore = game.add.text(80, 43 , '000' , {font : "15px Arial" , fill : "#eceff1"});
+  mylevel = game.add.text(311, 43 , '01' , {font : "15px Arial" , fill : "#eceff1"});
+  timer = game.add.text(515, 43, '00:00:00' ,{font : "15px Arial" , fill : "#eceff1"});
 }
 function createText()
 {
+  myscore.font = 'Architects Daughter';
+  mylevel.font = 'Architects Daughter';
+  timer.font = 'Architects Daughter';
   boxOneText = game.add.text(0, 0,'56 + 56',{ font: "20px Arial", fill: "#ffffff", wordWrap: true, wordWrapWidth: block.getAt(0).width, align: "center" });
   boxOneText.x = Math.floor(block.getAt(0).x + block.getAt(0).width/2);
   boxOneText.y = Math.floor(block.getAt(0).y + block.getAt(0).height/2);
