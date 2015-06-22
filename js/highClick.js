@@ -56,8 +56,6 @@ function create()
   myscore = game.add.text(80, 43 , '000' , {font : "15px Arial" , fill : "#eceff1"});
   mylevel = game.add.text(311, 43 , '01' , {font : "15px Arial" , fill : "#eceff1"});
   timer = game.add.text(515, 43, '00:00:00' ,{font : "15px Arial" , fill : "#eceff1"});
-
-
 }
 fucntion createText()
 {
@@ -65,13 +63,14 @@ fucntion createText()
   boxOneText.x = Math.floor(block.getAt(0).x + block.getAt(0).width/2);
   boxOneText.y = Math.floor(block.getAt(0).y + block.getAt(0).height/2);
   boxOneText.anchor.set(0.45,0.3);
-  boxOneText.font = 'Revalia';
+  boxOneText.font = 'Architects+Daughter::latin';
   //boxOneText.align = center;
 
   boxTwoText = game.add.text(400, 225,'56 + 56',{ font: "20px Arial", fill: "#ffffff", wordWrap: true, wordWrapWidth: block.getAt(0).width, align: "center" });
   boxTwoText.x = Math.floor(block.getAt(1).x + block.getAt(1).width/2);
   boxTwoText.y = Math.floor(block.getAt(1).y + block.getAt(1).height/2);
   boxTwoText.anchor.set(0.45,0.3);
+  boxTwoText.font = 'Architects+Daughter::latin';
   boxText();
 }
 function update()
