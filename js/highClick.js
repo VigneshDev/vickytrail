@@ -53,9 +53,9 @@ function create()
   game.add.sprite(255,335,'equals');
   pause = game.add.sprite(575,460,'pause');
   pause.inputEnabled = true;
-  myscore = game.add.text(80, 43 , '000' , {font : "15px Arial" , fill : "#eceff1"});
-  mylevel = game.add.text(311, 43 , '01' , {font : "15px Arial" , fill : "#eceff1"});
-  timer = game.add.text(515, 43, '00:00:00' ,{font : "15px Arial" , fill : "#eceff1"});
+  myscore = game.add.text(80, 43 , '000' , {font : "15px Architects Daughter" , fill : "#eceff1"});
+  mylevel = game.add.text(311, 43 , '01' , {font : "15px Architects Daughter" , fill : "#eceff1"});
+  timer = game.add.text(515, 43, '00:00:00' ,{font : "15px Architects Daughter" , fill : "#eceff1"});
 }
 function createText()
 {
